@@ -1,0 +1,31 @@
+
+spring:
+  aop:
+    proxy-target-class: true
+  profiles:
+    active: dev
+
+
+ # 404 交给异常处理器处理
+  mvc:
+    throw-exception-if-no-handler-found: true
+  resources:
+    add-mappings: false
+mybatis:
+ #分页插件
+pagehelper:
+       helperDialect: mysql
+       reasonable: true
+       supportMethodsArguments: true
+       params: count=countSql
+###指定扫描日志配置
+logging:
+    config: classpath:log4j2.xml
+
+
+#自定义配置
+swaggerConfig:
+   controller: com.lsn.ams.controller
+
+
+

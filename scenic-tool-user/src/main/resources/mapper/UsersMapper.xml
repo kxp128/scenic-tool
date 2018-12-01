@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lsn.user.mapper.UsersMapper">
+  <resultMap id="BaseResultMap" type="com.lsn.user.model.Users">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="user_id" jdbcType="INTEGER" property="userId" />
+    <result column="phone" jdbcType="VARCHAR" property="phone" />
+    <result column="sex" jdbcType="TINYINT" property="sex" />
+    <result column="nickname" jdbcType="VARCHAR" property="nickname" />
+    <result column="province" jdbcType="VARCHAR" property="province" />
+    <result column="city" jdbcType="VARCHAR" property="city" />
+    <result column="avatar" jdbcType="VARCHAR" property="avatar" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="is_enable" jdbcType="TINYINT" property="isEnable" />
+    <result column="phone_location" jdbcType="VARCHAR" property="phoneLocation" />
+    <result column="age" jdbcType="TINYINT" property="age" />
+    <result column="last_login_date" jdbcType="INTEGER" property="lastLoginDate" />
+    <result column="openid" jdbcType="VARCHAR" property="openid" />
+    <result column="wxa_open_id" jdbcType="VARCHAR" property="wxaOpenId" />
+    <result column="union_id" jdbcType="VARCHAR" property="unionId" />
+    <result column="role" jdbcType="TINYINT" property="role" />
+  </resultMap>
+</mapper>
